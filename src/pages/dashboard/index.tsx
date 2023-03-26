@@ -23,8 +23,6 @@ interface IndexData {
 const rawData: IndexData[] = indexData;
 const metricNames: string[] = Object.keys(indexData[0]).filter((k: string) => typeof rawData[0][k] === 'number');
 const indexNames: string[] = indexData.map((d)=> {return d.index_name});
-console.log(indexNames,'indexNames');
-console.log(rawData,'rawData');
 
 const generateData = (data: IndexData[]): DataSet[] => {
     return metricNames.map((name: string) => ({
@@ -69,8 +67,8 @@ const getOptions = (text: string): ChartOptions<'bar'> =>{
 const Charts = (props: Props) =>{
     return (
         <div className={styles.Charts}>
-        {props.data.map((d: any)=>
-            <div className={styles.ChartItem}>
+        {props.data.map((d: any, idx: number)=>
+            <div className={styles.ChartItem} key={`${idx + styles.Charts}`} >
                 <BarChart options={getOptions(d.datasets[0].label)} data={d}/>
             </div>
         )}
@@ -89,7 +87,6 @@ export async function getStaticProps(){
         }
     })
 
-    console.log(chartDataArray,'chartDataArray')
     return {
         props:{
             data: chartDataArray
