@@ -1,0 +1,17 @@
+.Charts {
+  /* position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 80vw;
+  max-height: 100vh;
+}
+
+.ChartItem {
+  position: relative;
+  margin: 10px;
+  width: 30%;
+  height: 30vh;
+}
