@@ -1,0 +1,248 @@
+[
+    {
+        "table_name": "tb_lead",
+        "index_name": "idx__id_cea_number_lead",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9863882532181979
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "idx_leads_cea_number",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9983844162261643
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "idx_leads_lead_contact_id",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9969608560830209
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "idx_tb_lead_latest_transaction_date",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.982782738075112
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "idx_tb_lead_latest_transaction_date_desc",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9764251834346068
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "ix_tb_lead_cea_number",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.998341596893635
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "ix_tb_lead_cea_number_district_main_cat",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9967821083250012
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "ix_tb_lead_cea_number_mop_ssd_expiry_date",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9901817887777018
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "ix_tb_lead_cluster_id",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.999357674442626
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "ix_tb_lead_condo_x_value",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9885436476408946
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "ix_tb_lead_floor_num",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.996880498108722
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "ix_tb_lead_hdb_x_value",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9909218867884587
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "ix_tb_lead_id_is_hidden",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9803749868613345
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "ix_tb_lead_is_hidden",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9969856338631031
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "ix_tb_lead_landed_x_value",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9929588382102094
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "ix_tb_lead_latest_transaction",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9738633751989878
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "ix_tb_lead_lead_contact_id",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.996979226692406
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "ix_tb_lead_one_active_lead_to_contact",
+        "metric_name": "cache hit rate",
+        "metric_value": 0
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "ix_tb_lead_select_x_value",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9635207787198107
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "ix_tb_lead_unit_num",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9988883422560667
+    },
+    {
+        "table_name": "tb_lead",
+        "index_name": "tb_lead_pkey",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9872847132409606
+    },
+    {
+        "table_name": "tb_lead_arm",
+        "index_name": "tb_lead_arm_pkey",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9997046662728883
+    },
+    {
+        "table_name": "tb_lead_base_templates",
+        "index_name": "tb_lead_base_templates_pkey",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.8791348600508906
+    },
+    {
+        "table_name": "tb_lead_contact",
+        "index_name": "ix_tb_lead_contact_contact_display_name",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9293030211632233
+    },
+    {
+        "table_name": "tb_lead_contact",
+        "index_name": "tb_lead_contact_lead_arm_id",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9824921473443746
+    },
+    {
+        "table_name": "tb_lead_contact",
+        "index_name": "tb_lead_contact_pkey",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9728886345517063
+    },
+    {
+        "table_name": "tb_lead_files",
+        "index_name": "ix_tb_lead_files",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.922348347914106
+    },
+    {
+        "table_name": "tb_lead_files",
+        "index_name": "tb_lead_files_pkey",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.5097636176772867
+    },
+    {
+        "table_name": "tb_lead_group",
+        "index_name": "ix_tb_lead_group_name",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9059474412171508
+    },
+    {
+        "table_name": "tb_lead_group",
+        "index_name": "tb_lead_group_pkey",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.7694805194805194
+    },
+    {
+        "table_name": "tb_lead_group_contact",
+        "index_name": "tb_lead_group_contact_group_id_contact_id_key",
+        "metric_name": "cache hit rate",
+        "metric_value": 0
+    },
+    {
+        "table_name": "tb_lead_group_contact",
+        "index_name": "tb_lead_group_contact_pkey",
+        "metric_name": "cache hit rate",
+        "metric_value": 0
+    },
+    {
+        "table_name": "tb_lead_messages",
+        "index_name": "ix_tb_lead_messages_id",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9021498577300031
+    },
+    {
+        "table_name": "tb_lead_messages",
+        "index_name": "ix_tb_lead_messages_user",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.7378864790032302
+    },
+    {
+        "table_name": "tb_lead_messages",
+        "index_name": "tb_lead_messages_pkey",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.6739455578821418
+    },
+    {
+        "table_name": "tb_lead_section_notes",
+        "index_name": "ix_tb_lead_section_notes",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.6281179138321995
+    },
+    {
+        "table_name": "tb_lead_section_notes",
+        "index_name": "tb_lead_section_notes_message_id_section_key",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.5052083333333334
+    },
+    {
+        "table_name": "tb_lead_section_notes",
+        "index_name": "tb_lead_section_notes_pkey",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.5777439024390244
+    },
+    {
+        "table_name": "tb_lead_user_templates",
+        "index_name": "ix_tb_lead_user_templates",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.8931373697154233
+    },
+    {
+        "table_name": "tb_lead_user_templates",
+        "index_name": "tb_lead_user_templates_pkey",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9372069951563017
+    },
+    {
+        "table_name": "tb_lead_user_templates",
+        "index_name": "tb_lead_user_templates_user_id_base_template_id_key",
+        "metric_name": "cache hit rate",
+        "metric_value": 0.9622085988545616
+    }
+]
