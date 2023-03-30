@@ -1,0 +1,8 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/dashboard/index_cache_hit": "pages/dashboard/index_cache_hit.js",
+  "/dashboard/home": "pages/dashboard/home.js",
+  "/": "pages/index.js"
+}
