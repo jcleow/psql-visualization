@@ -1,5 +1,7 @@
-import { type GetStaticProps } from 'next'
-import indexData from '../../../../data/index.json'
+import axios from 'axios'
+import useSWR from 'swr'
+// import { type GetStaticProps } from 'next'
+// import indexData from '../../../../data/index.json'
 import { type DataSet, BarChart } from 'components/BarChart'
 import { type ChartData, type ChartOptions } from 'chart.js'
 import React, { type ReactElement, type ReactNode } from 'react'
@@ -21,23 +23,18 @@ type IndexData = {
 	table_size: number
 }
 
-const rawData: IndexData[] = indexData
-
-const metricNames: string[] = Object.keys(indexData[0]).filter((k: string) => typeof rawData[0][k] === 'number')
-const indexNames: string[] = indexData.map((d) => { return d.index_name })
+// const rawData: IndexData[] = indexData
+// const metricNames: string[] = Object.keys(indexData[0]).filter((k: string) => typeof rawData[0][k] === 'number')
+// const indexNames: string[] = indexData.map((d) => { return d.index_name })
 
 const generateData = (data: IndexData[]): DataSet[] => {
+	const metricNames: string[] = Object.keys(data[0]).filter((k: string) => typeof data[0][k] === 'number')
 	return metricNames.map((name: string) => ({
 		label: name,
 		data: data.map((row: IndexData) => row[name] as number),
 		borderColor: 'rgb(255, 99, 132)',
 		backgroundColor: 'rgba(255, 99, 132, 0.5)'
 	}))
-}
-
-type Props = {
-	data: Array<ChartData<'bar'>>
-	options: any
 }
 
 const getOptions = (text: string): ChartOptions<'bar'> => {
@@ -63,10 +60,26 @@ const getOptions = (text: string): ChartOptions<'bar'> => {
 	return options
 }
 
-const Charts = (props: Props): JSX.Element => {
+const Charts = (): JSX.Element => {
+	const address = 'http://localhost:3333/api/v1/index_usage'
+	const fetcher = async (url: string) => await axios.get(url).then((res) => res.data)
+	const { data } = useSWR<IndexData[]>(address, fetcher)
+
+	if (data == null) {
+		return <></>
+	}
+
+	const indexNames: string[] = data.map((d) => { return d.index_name })
+	const chartDataArray: Array<ChartData<'bar'>> = generateData(data)?.map((result) => {
+		return {
+			labels: indexNames,
+			datasets: [result]
+		}
+	})
+
 	return (
 		<div className={styles.Charts}>
-			{props.data.map((d: any, idx: number) =>
+			{chartDataArray.map((d: any, idx: number) =>
 				<div className={styles.ChartItem} key={`${idx}${styles.Charts}`} >
 					<BarChart options={getOptions(d.datasets[0].label)} data={d}/>
 				</div>
@@ -84,18 +97,3 @@ Charts.getLayout = function getLayout (component: ReactElement): ReactNode {
 }
 
 export default Charts
-
-export const getStaticProps: GetStaticProps = async () => {
-	const chartDataArray: Array<ChartData<'bar'>> = generateData(rawData).map((result) => {
-		return {
-			labels: indexNames,
-			datasets: [result]
-		}
-	})
-
-	return {
-		props: {
-			data: chartDataArray
-		}
-	}
-}
