@@ -7,15 +7,15 @@ import (
 type PgStatUserIndex struct {
 	TableName            string `json:"table_name"`
 	IndexName            string `json:"index_name"`
-	IndexScansCount      int32  `json:"index_scans_count"`
-	IndexScanTupleRead   int32  `json:"index_scan_tuple_read"`
-	IndexScanTupleFetch  int32  `json:"index_scan_tuple_fetch"`
-	IndexSize            int32  `json:"index_size"`
-	TableReadsIndexCount int32  `json:"table_reads_index_count"`
-	TableReadsSeqCount   int32  `json:"table_reads_seq_count"`
-	TableReadsCount      int32  `json:"table_reads_count"`
-	TableWritesCount     int32  `json:"table_writes_count"`
-	TableSize            int32  `json:"table_size"`
+	IndexScansCount      int64  `json:"index_scans_count"`
+	IndexScanTupleRead   int64  `json:"index_scan_tuple_read"`
+	IndexScanTupleFetch  int64  `json:"index_scan_tuple_fetch"`
+	IndexSize            int64  `json:"index_size"`
+	TableReadsIndexCount int64  `json:"table_reads_index_count"`
+	TableReadsSeqCount   int64  `json:"table_reads_seq_count"`
+	TableReadsCount      int64  `json:"table_reads_count"`
+	TableWritesCount     int64  `json:"table_writes_count"`
+	TableSize            int64  `json:"table_size"`
 }
 
 type PgStatUserIndexes []PgStatUserIndex
