@@ -4,15 +4,21 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
   max-width: 80vw;
   max-height: 100vh;
 }
 
+.ChartContainer {
+  width: 50%;
+  height: 33vh;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
 .ChartItem {
   position: relative;
-  margin: 10px;
-  width: 30%;
+  margin-left: 10px;
+  width: 100vw;
   height: 30vh;
 }
 

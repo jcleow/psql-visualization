@@ -11,6 +11,7 @@ import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
 import HomeIcon from '@mui/icons-material/Home'
+import DataUsageIcon from '@mui/icons-material/DataUsage'
 import CachedIcon from '@mui/icons-material/Cached'
 import { type SvgIconComponent } from '@mui/icons-material'
 
@@ -31,8 +32,15 @@ const SideBarItems: SideBarMenuInterface[] = [
 	{
 		home: {
 			name: 'Home',
-			url: '/dashboard/home',
+			url: '/',
 			icon: HomeIcon
+		}
+	},
+	{
+		index_usage: {
+			name: 'Index Usage',
+			url: '/dashboard/index_usage',
+			icon: DataUsageIcon
 		}
 	},
 	{

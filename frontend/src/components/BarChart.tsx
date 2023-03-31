@@ -23,8 +23,8 @@ ChartJS.register(
 export type DataSet = {
 	label: string
 	data: number[]
-	borderColor: string
-	backgroundColor: string
+	borderColor: string | string[]
+	backgroundColor: string | string[]
 }
 
 export type DefinedChartData = {
